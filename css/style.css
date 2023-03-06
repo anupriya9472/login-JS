@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mulish:wght@500&display=swap');
+
+:root {
+    --myfont: 'Mulish', sans-serif;
+    --my-btn-font: 'Montserrat', sans-serif;
+    --lg-lightcolor: linear-gradient(to left, rgba(116, 235, 213, 0.6), rgba(159, 172, 230, 0.5));
+    --lg-color: linear-gradient(to left, #EA738DFF, #89ABE3FF);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--myfont);
+}
+
+.main_container {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: var(--lg-lightcolor), url("../images/bg-cafe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-form {
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0, 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+    overflow: hidden;
+    width: 36%;
+}
+
+.div-form .header {
+    background: var(--lg-color);
+    padding: 15px 0;
+}
+
+.div-form .header h2 {
+    color: #222;
+    font-family: var(--my-btn-font);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.div-form form {
+    padding: 20px 40px;
+}
+
+.div-form .form_data {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.div-form .form_data label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.div-form .form_data input {
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding: 12px;
+}
+
+.div-form .form_data input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.div-form #forgot_pwd {
+    float: right;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.div-form #forgot_pwd:hover,
+.div-form .not_registered #create_account:hover {
+    color: crimson;
+}
+
+.div-form .btn_login {
+    background: var(--lg-color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-family: var(--my-btn-font);
+    font-size: 16px;
+    padding: 12px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+.div-form .btn_login:hover {
+    background: linear-gradient(to right, #EA738DFF, #9face6);
+}
+
+.div-form .not_registered #create_account {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.div-form .social {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.div-form .social small {
+    float: left;
+    font-size: 16px;
+}
+
+.div-form .social i {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.div-form .social i:hover {
+    color: crimson;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+@media (max-width:998px) {
+
+    .div-form {
+        width: 45%;
+    }
+}
+
+@media (max-width:768px) {
+
+    .div-form {
+        width: 65%;
+    }
+}
+
+@media (max-width:480px) {
+    .div-form {
+        width: 85%;
+    }
+}

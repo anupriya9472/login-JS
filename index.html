@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div class="main_container">
+        <div class="div-form">
+            <div class="header">
+                <h2>Login</h2>
+            </div>
+            <form class="form" id="form">
+                <div class="form_data">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off">
+                </div>
+
+                <div class="form_data">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                </div>
+
+                <small id="forgot_pwd">Forgot password?</small>
+
+                <input type="submit" value="Login" name="login" class="btn_login">
+
+                <small class="not_registered">Not Registered? <span id="create_account">Create an
+                        Account</span></small>
+                        
+                <!-- Login using social -->
+                <div class="social">
+                    <small>Login with </small>
+                    <span onclick="location.href='https://www.google.com/'"><i
+                            class="fas fa-brands fa-google"></i></span>
+                    <span onclick="location.href='https://www.facebook.com/'"><i
+                            class="fas fa-brands fa-facebook"></i></span>
+                    <span onclick="location.href='https://twitter.com/login?lang=en'"><i
+                            class="fas fa-brands fa-twitter"></i></span>
+                </div>
+                <!-- Login using social end-->
+            </form>
+        </div>
+
+    </div>
+    <!-- Main Container end -->
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
